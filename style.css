@@ -142,9 +142,8 @@ body{
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 47%;
 
-  margin-right: 10px;
   display: block;
   width: 20px;
   height: 20px;
@@ -302,7 +301,7 @@ body{
   padding-bottom: 40px;
 
   color: white;
-  background: #252525 url('pattern-black.jpg');
+  background: #252525 url('black-pattern.png');
 }
 
 .footer-contacts{
@@ -315,12 +314,68 @@ body{
   color: white;
 }
 
+.footer-contacts a:hover{
+  text-decoration: none;
+}
+
 .footer-social{
   float: left;
   width: 180px;
+
+  text-align: center;
+}
+
+.social-btn{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: black no-repeat center;
+}
+
+.social-btn:hover{
+  background-color: white;
+}
+
+.social-btn-vk{
+  background: black url('v.png') no-repeat center;
+}
+
+.social-btn-inst{
+  background: black url('i.png') no-repeat center;
+}
+
+.social-btn-fb{
+  background: black url('f.png') no-repeat center;
+}
+
+.social-btn-vk:hover{
+  background: white url('v copy.png') no-repeat center;
+}
+
+.social-btn-inst:hover{
+  background: white url('i copy.png') no-repeat center;
+}
+
+.social-btn-fb:hover{
+  background: white url('f copy.png') no-repeat center;
 }
 
 .footer-copyright{
    float: right;
-   width: 180px;
+   max-width: 180px;
+}
+
+.footer-copyright p{
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-copyright .btn{
+  margin-right: 0;
 }
