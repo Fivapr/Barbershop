@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский"</title>
     <link rel='stylesheet' href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -96,7 +96,7 @@
               пн — пт: c 10:00 до 22:00<br>
               сб — вс: с 10:00 до 19:00<br>
             </p>
-            <a class="btn" href="#">Как проехать</a>
+            <a class="btn js-open-map" href="#">Как проехать</a>
             <a class="btn" href="#">Обратная связь</a>
           </div>
           <div class="index-content-right">
@@ -133,5 +133,28 @@
           </section>
         </div>
       </footer>
+
+      <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть"> Закрыть </button>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль</p>
+        <form class="login-form" action='https://echo.htmlacademy.ru' method='post'>
+          <input class="icon-user" type="text" name="login" placeholder="Логин">
+          <input class="icon-password" type="password" name="password" placeholder="пароль">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль</a>
+          <button class="btn" type="submit">Войти</button>
+        </form>
+      </div>
+
+      <div class="modal-content-map">
+        <button class="modal-content-close" type="button" title="Закрыть"> Закрыть </button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.7027184180595!2d82.8948334949924!3d55.053632990018556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe452190ba605%3A0x79618f02399e36f2!2z0YPQuy4g0J_Qu9Cw0L3QvtCy0LDRjw!5e0!3m2!1sru!2sru!4v1514026996567" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+          <script src="main_min.js"></script>
   </body>
 </html>
